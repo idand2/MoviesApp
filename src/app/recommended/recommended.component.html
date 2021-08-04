@@ -1,1 +1,19 @@
-<p>recommended works!</p>
+<h2>Recommended</h2>
+<div fxLayout="row" class="row">
+    <div fxFlex="20%" *ngFor = "let movie of recommendedMovies">
+    <mat-card class="fullPictureCard" >
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header>
+                <img mat-card-image src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}" >
+            </mat-expansion-panel-header>
+            <p>
+                {{movie.overview}}
+            </p>
+        <mat-card-actions>
+            <button mat-button>Movie Page </button>
+            <button mat-button>Share </button>
+        </mat-card-actions>
+        </mat-expansion-panel>
+    </mat-card>
+    </div>
+</div>

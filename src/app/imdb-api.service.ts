@@ -14,6 +14,10 @@ export class TmdbApiService {
     return this.http.get<ApiResult>(weekTrendingURL)
 
   }
+  getPopular(): Observable<ApiResult>{
+    var popularURL= GlobalConstants.apiURL + "/movie/popular"+ GlobalConstants.apiKey;
+    return this.http.get<ApiResult>(popularURL)
+  }
   getTopRated():Observable<ApiResult>{
     var topRatedURL = GlobalConstants.apiURL + "/movie/top_rated"+ GlobalConstants.apiKey;
     return this.http.get<ApiResult>(topRatedURL)

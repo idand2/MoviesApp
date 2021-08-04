@@ -1,0 +1,20 @@
+.mat-expansion-panel-header {
+  display: unset;
+  padding: 0;
+}
+.fullPictureCard {
+  padding: 0mm;
+}
+.mat-card-image:first-child {
+  margin-top: 0mm;
+}
+.mat-card-image {
+  margin-bottom: 0px;
+}
+.row {
+  width: 80%;
+  margin-left: 10%;
+}
+h2 {
+  text-align: center;
+}

@@ -13,7 +13,7 @@ import { SearchedMovie } from '../movie';
 export class TrendingComponent implements OnInit {
   trendingMovies: SearchedMovie[] = [];
 
-  constructor(private apiSerivce: TmdbApiService) { }
+  constructor(private apiService: TmdbApiService) { }
 
   ngOnInit(): void {
     this.getTrending();
@@ -21,7 +21,7 @@ export class TrendingComponent implements OnInit {
   }
 
   getTrending(): void {
-    this.apiSerivce.getWeekTrending()
+    this.apiService.getWeekTrending()
       .subscribe(trending => this.trendingMovies = trending.results.slice(0,5));
   }
 
