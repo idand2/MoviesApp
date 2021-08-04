@@ -2,8 +2,20 @@
 <h1>{{title}} Avi</h1>
 <!-- creates a nav bar with to records, each is a routerLink to a view.  -->
 <nav>
-    <a routerLink="/recommended">Recommended</a>
-    <a routerLink="/topFive">Top 5</a>
+    <!-- <a routerLink="/welcome">
+        <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+        </button>
+    </a> -->
+    <a routerLink="/trending">
+        <button mat-raised-button color="primary">Trending</button>
+    </a>
+    <a routerLink="/recommended">
+        <button mat-raised-button color="primary">Recommended</button>
+    </a>
+    <a routerLink="/topFive">
+        <button mat-raised-button color="primary">Top 5</button>
+    </a>
 </nav>
 <!-- TODO: check wtf is router outlet :)   add deafuelt view. -->
 <router-outlet></router-outlet>
